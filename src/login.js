@@ -23,7 +23,7 @@ export default class Login extends Component {
 
   Submit = async () => {
     try {
-      var respon = await axios.post(process.env.REACT_APP_BACKEND + 'login', {
+      var respon = await axios.post(process.env.REACT_APP_BACKEND + 'users/login', {
         email: this.state.email,
         password: this.state.password
       })
